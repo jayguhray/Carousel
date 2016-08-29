@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  introViewController.swift
 //  Carousel
 //
 //  Created by Garay,Jerry on 8/25/16.
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class introViewController: UIViewController {
+    @IBOutlet weak var introScrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        introScrollView.contentSize = CGSize(width: 320, height: 1136)
 
         // Do any additional setup after loading the view.
     }

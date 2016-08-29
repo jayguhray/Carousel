@@ -1,17 +1,19 @@
 //
-//  ViewController.swift
+//  TutorialViewController.swift
 //  Carousel
 //
-//  Created by Garay,Jerry on 8/25/16.
+//  Created by Garay,Jerry on 8/29/16.
 //  Copyright © 2016 Garay,Jerry. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class TutorialViewController: UIViewController {
 
+    @IBOutlet weak var tutorialScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tutorialScrollView.contentSize = CGSize (width: 1280, height: 700)
 
         // Do any additional setup after loading the view.
     }
