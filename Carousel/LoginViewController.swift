@@ -16,23 +16,28 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var loginIndicator: UIActivityIndicatorView!
     @IBAction func didPressLogin(sender: UIButton) {
         loginIndicator.startAnimating()
-        if emailField.text == "jerry@gmail.com" && passwordField.text == "password"{
+        if emailField.text == "jerry@gmail.com" && passwordField.text == "pass"{
+            delay(2){
+            self.loginIndicator.stopAnimating()
+            self.performSegueWithIdentifier("loginSegue", sender: self)
+            }
         }
-        if emailField.text!.isEmpty {
+        else if emailField.text!.isEmpty {
             let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
             let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
                 // handle cancel response here. Doing nothing will dismiss the view.
             }
+            self.loginIndicator.stopAnimating()
             alertController.addAction(cancelAction)
             presentViewController(alertController, animated: true) {
             }
-            
         }
         else {
             let alertController = UIAlertController(title: "Sign in Failed", message: "Please enter the correct Email and Password", preferredStyle: .Alert)
             let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
                 // handle cancel response here. Doing nothing will dismiss the view.
             }
+            self.loginIndicator.stopAnimating()
             alertController.addAction(cancelAction)
             presentViewController(alertController, animated: true) {
             }

@@ -1,5 +1,5 @@
 //
-//  TutorialViewController.swift
+//  SettingsViewController.swift
 //  Carousel
 //
 //  Created by Garay,Jerry on 8/29/16.
@@ -8,12 +8,15 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class SettingsViewController: UIViewController {
+    @IBOutlet weak var settingsScrollView: UIScrollView!
+    @IBAction func onCloseTap(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
-    @IBOutlet weak var tutorialScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tutorialScrollView.contentSize = CGSize (width: 1280, height: 700)
+        settingsScrollView.contentSize = CGSize(width: 320, height: 850)
 
         // Do any additional setup after loading the view.
     }

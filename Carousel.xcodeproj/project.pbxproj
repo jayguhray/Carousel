@@ -17,7 +17,10 @@
 		AAA62F341D6E148900DF2446 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA62F331D6E148900DF2446 /* Common.swift */; };
 		AAA62F361D6F3F9A00DF2446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA62F351D6F3F9A00DF2446 /* ViewController.swift */; };
 		AAA62F381D6F417500DF2446 /* introViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA62F371D6F417500DF2446 /* introViewController.swift */; };
-		AAE50E421D73FABE00956BA6 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE50E411D73FABE00956BA6 /* TutorialViewController.swift */; };
+		AAC4DE6E1D74CA20005900E8 /* TutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4DE6D1D74CA20005900E8 /* TutPageViewController.swift */; };
+		AAC4DE701D74CDA6005900E8 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4DE6F1D74CDA6005900E8 /* TimelineViewController.swift */; };
+		AAC4DE721D74D044005900E8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4DE711D74D044005900E8 /* SettingsViewController.swift */; };
+		AAC4DE741D74D077005900E8 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4DE731D74D077005900E8 /* ConversationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +57,10 @@
 		AAA62F331D6E148900DF2446 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		AAA62F351D6F3F9A00DF2446 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAA62F371D6F417500DF2446 /* introViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = introViewController.swift; sourceTree = "<group>"; };
-		AAE50E411D73FABE00956BA6 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		AAC4DE6D1D74CA20005900E8 /* TutPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutPageViewController.swift; sourceTree = "<group>"; };
+		AAC4DE6F1D74CDA6005900E8 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		AAC4DE711D74D044005900E8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AAC4DE731D74D077005900E8 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +111,13 @@
 		AAA62F001D6E122D00DF2446 /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
+				AAC4DE6D1D74CA20005900E8 /* TutPageViewController.swift */,
 				AAA62F331D6E148900DF2446 /* Common.swift */,
 				AAA62F011D6E122D00DF2446 /* AppDelegate.swift */,
 				AAA62F051D6E122D00DF2446 /* Main.storyboard */,
-				AAE50E411D73FABE00956BA6 /* TutorialViewController.swift */,
+				AAC4DE711D74D044005900E8 /* SettingsViewController.swift */,
+				AAC4DE731D74D077005900E8 /* ConversationsViewController.swift */,
+				AAC4DE6F1D74CDA6005900E8 /* TimelineViewController.swift */,
 				AA00A8C51D73E05800B67524 /* LoginViewController.swift */,
 				AAA62F371D6F417500DF2446 /* introViewController.swift */,
 				AAA62F351D6F3F9A00DF2446 /* ViewController.swift */,
@@ -269,11 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA62F361D6F3F9A00DF2446 /* ViewController.swift in Sources */,
+				AAC4DE6E1D74CA20005900E8 /* TutPageViewController.swift in Sources */,
 				AAA62F341D6E148900DF2446 /* Common.swift in Sources */,
 				AAA62F021D6E122D00DF2446 /* AppDelegate.swift in Sources */,
+				AAC4DE701D74CDA6005900E8 /* TimelineViewController.swift in Sources */,
 				AA00A8C61D73E05800B67524 /* LoginViewController.swift in Sources */,
-				AAE50E421D73FABE00956BA6 /* TutorialViewController.swift in Sources */,
+				AAC4DE741D74D077005900E8 /* ConversationsViewController.swift in Sources */,
 				AAA62F381D6F417500DF2446 /* introViewController.swift in Sources */,
+				AAC4DE721D74D044005900E8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
