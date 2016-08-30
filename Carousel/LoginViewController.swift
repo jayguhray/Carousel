@@ -33,13 +33,16 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         else {
-            let alertController = UIAlertController(title: "Sign in Failed", message: "Please enter the correct Email and Password", preferredStyle: .Alert)
-            let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
-                // handle cancel response here. Doing nothing will dismiss the view.
-            }
-            self.loginIndicator.stopAnimating()
-            alertController.addAction(cancelAction)
-            presentViewController(alertController, animated: true) {
+            delay(2){
+                self.loginIndicator.stopAnimating()
+                let alertController = UIAlertController(title: "Sign in Failed", message: "Please enter the correct Email and Password", preferredStyle: .Alert)
+                let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+                    // handle cancel response here. Doing nothing will dismiss the view.
+                }
+                alertController.addAction(cancelAction)
+                self.presentViewController(alertController, animated: true) {
+                }
+
             }
         }
     }
